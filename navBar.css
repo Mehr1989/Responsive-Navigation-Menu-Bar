@@ -111,10 +111,7 @@ nav #icon{
     nav a{
         font-size: 17px;
     }
-    a.activ,a:hover{
-        /*border: none*/
-
-    }
+  
     nav ul.show{
         left: 0;
     }
