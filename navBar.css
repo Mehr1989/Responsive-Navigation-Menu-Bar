@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://cdn.cdnparenting.com/articles/2019/01/12121948/543428554-H.webp);
+    background-size: 100% 100vh;
+
+}
+
+
+nav{
+    height: 18vh;
+    width: 100%;
+    background-color: rgb(180, 180, 192);
+
+}
+label.logo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 0 5rem;
+    line-height: 8rem;
+}
+
+nav ul{
+    float: right;
+    margin-right: 3rem;
+    
+}
+nav li{
+    display: inline-block;
+    margin: 0 6px;
+    line-height: 8rem;
+    
+}
+
+nav a{
+    color:rgb(216, 226, 235);
+    background-color: rgb(64, 64, 82);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding:  7px 10px;
+    border-radius: 5px;
+
+
+}
+
+a .active, a:hover{
+    border: 1px dashed white;
+    transition: 0.5s;
+    background-color: rgb(91, 91, 119);
+
+}
+
+nav #icon{
+    color: aliceblue;
+    font-size: 30px;
+    float: right;
+    margin-right: 2rem;
+    cursor: pointer;
+    line-height: 8rem;
+    display: none;
+}
+
+@media only screen and (max-width: 1048px) {
+    label.logo {
+     font-size: 32px ;
+     padding-left: 1rem;
+    }
+    nav{
+        height: 20vh;
+    }
+    nav ul{
+        margin-right: 1rem;
+    }
+    nav a{
+        font-size: 12px;
+        
+    }
+  }
+  @media only screen and (max-width: 909px) {
+    nav #icon {
+        display: block;
+        top: 0;
+      
+    }
+    nav{
+        height: 18vh;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 7rem;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        
+    }
+    nav li{
+        display: block;
+        margin: 2rem 0;
+        line-height: 1rem;
+        
+    }
+    nav a{
+        font-size: 17px;
+    }
+    a.activ,a:hover{
+        /*border: none*/
+
+    }
+    nav ul.show{
+        left: 0;
+    }
+  }
+
+  
+
+
